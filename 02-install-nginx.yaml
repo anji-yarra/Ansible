@@ -2,8 +2,8 @@
   hosts: Web
   become: yes
   tasks:
-  - name: nginx
-    dnf:
+  - name: install nginx
+    ansible.builtin.package:
       name: nginx
       state: present
 
