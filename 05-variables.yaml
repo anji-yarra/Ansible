@@ -1,0 +1,9 @@
+- name: Variables using varible file
+  hosts: local
+  connection: local
+  vars_files:
+  - Details.yaml
+  tasks:
+  - name: print Variables
+    debug:
+      msg: "Hi, I'm {{NAME}}, a {{PROFESSION}} and from {{FROM}}"
