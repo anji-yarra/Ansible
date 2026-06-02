@@ -7,4 +7,4 @@
     Profession: "Software Engineer"
   tasks:
   - debug:
-      msh: "Hi, I'm {{NAME}}, a {{Profession}} from {{FROM}}"
+      msg: "Hi, I'm {{NAME}}, a {{Profession}} from {{FROM}}"
