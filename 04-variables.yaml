@@ -1,0 +1,13 @@
+- name: inheritance Variables
+  hosts: local
+  connection: local
+  vars:
+    NAME: "ANJI YARRA"
+    PROFESSION: "SW Engineer"
+    FROM: "Bhimavaram"
+  tasks:
+  - name: Print variables
+    vars:
+      FROM: "Hyderabed"
+    debug: 
+      msg: "Hi, I'm {{NAME}}, a {{PROFESSION}} and from {{FROM}}"
