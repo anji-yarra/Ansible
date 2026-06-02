@@ -1,0 +1,10 @@
+- name: Variables
+  hosts: localhost
+  connection: local
+  vars:
+    NAME: "Anji Yarra"
+    FROM: "Bhimavaram"
+    Profession: "Software Engineer"
+  tasks:
+  - debug:
+      msh: "Hi, I'm {{NAME}}, a {{Profession}} from {{FROM}}""
