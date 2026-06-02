@@ -1,5 +1,5 @@
 - name: Variables
-  hosts: localhost
+  hosts: local
   connection: local
   vars:
     NAME: "Anji Yarra"
@@ -7,4 +7,4 @@
     Profession: "Software Engineer"
   tasks:
   - debug:
-      msh: "Hi, I'm {{NAME}}, a {{Profession}} from {{FROM}}""
+      msh: "Hi, I'm {{NAME}}, a {{Profession}} from {{FROM}}"
