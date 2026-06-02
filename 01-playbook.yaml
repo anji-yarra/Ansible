@@ -1,5 +1,5 @@
 - name: ping the server
   hosts: Web
   tasks:
-    - name: ping the server
-      uptime:
+  - name: ping the server
+    uptime:
